@@ -11,6 +11,14 @@ import VendorProfilePage from './pages/VendorProfilePage';
 import VerificationCodePage from './pages/VerificationCodePage';
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
+import ProductOverviewPage from './pages/ProductOverviewPage';
+import ProductDetailPage from './pages/ProductDetailPage';
+import UserAccountPage from './pages/UserAccountPage';
+import MessagesPage from './pages/MessagesPage';
+import OrderHistoryPage from './pages/OrderHistoryPage';
+import OrderDetailsPage from './pages/OrderDetailsPage';
+import VendorProfileViewPage from './pages/VendorProfileViewPage';
+import CheckoutPage from './pages/CheckoutPage';
 import { UserProvider } from './context/UserContext';
 
 function App() {
@@ -30,6 +38,14 @@ function App() {
             <Route path="/set-new-password" element={<SetNewPasswordPage />} />
             <Route path="/home" element={<HomePage />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/products" element={<ProductOverviewPage />} />
+            <Route path="/product/:id" element={<ProductDetailPage />} />
+            <Route path="/account" element={<UserAccountPage />} />
+            <Route path="/messages" element={<MessagesPage />} />
+            <Route path="/orders" element={<OrderHistoryPage />} />
+            <Route path="/order-details/:orderId" element={<OrderDetailsPage />} />
+            <Route path="/vendor/:vendorId" element={<VendorProfileViewPage />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
           </Routes>
         </div>
       </Router>
